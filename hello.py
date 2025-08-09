@@ -1,1 +1,7 @@
 print("hello, world!", "how's it going?")
+print('it\'s not "easy" being green')
+print('hello\tgoodbye')
+print('hello\ngoodbye')
+print("hello\tgoodbye")
+print("hello\ngoodbye")
+print(r"hello\ngoodbye")
