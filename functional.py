@@ -27,3 +27,30 @@ def web_urlify(state):
 
 def web_urls(states):
     return [web_urlify(state) for state in states]
+
+# singles: Imperative  version
+def imperative_singles(states):
+    singles = []
+    for state in states:
+        if len(state.split()) == 1:
+            singles.append(state)
+    return singles
+
+print(imperative_singles(states));
+
+#singles: functional version
+def functional_singles(states):
+    return [state for state in states if len(state.split()) == 1]
+
+print(functional_singles(states));
+
+
+# lengths: Imperative version
+def imperative_lengths(states):
+    lengths = {}
+    for state in states:
+        lengths[state] = len(state)
+    return lengths
+
+print(imperative_lengths(states));
+
