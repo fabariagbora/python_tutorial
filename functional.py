@@ -19,4 +19,11 @@ def functional_urls(states):
     return [urlify(state) for state in states]
 
 print(functional_urls(states));
+ 
+# Web Urls function
 
+def web_urlify(state):
+    return f'https://example.com/{urlify(state)}'
+
+def web_urls(states):
+    return [web_urlify(state) for state in states]
