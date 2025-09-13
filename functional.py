@@ -16,7 +16,7 @@ print(imperative_urls(states));
 
 # urls: functional version
 def functional_urls(states):
-    return ["-".join(state.lower().split()) for state in states]
+    return [urlify(state) for state in states]
 
 print(functional_urls(states));
 
