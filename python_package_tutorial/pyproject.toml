@@ -1,0 +1,22 @@
+ [build-system]
+ requires = ["hatchling"]
+ build-backend = "hatchling.build"
+
+ [project]
+ name = "palindrome_fabari"
+ version = "0.0.12"
+ authors = [
+ { name="Fabari Agbora", email="agfabariagbora@gmail.com" },
+ ]
+ description = "A small example package"
+ readme = "README.md"
+ requires-python = ">=3.10"
+ classifiers = [
+ "Programming Language :: Python :: 3",
+ "License :: OSI Approved :: MIT License",
+ "Operating System :: OS Independent",
+ ]
+
+ [project.urls]
+ "Homepage" = "https://github.com/fabariagbora/python_tutorial"
+ "Bug Tracker" = "https://github.com/fabariagbora/python_tutorial/python_package_tutorial"
