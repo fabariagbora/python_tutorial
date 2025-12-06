@@ -18,5 +18,5 @@
  ]
 
  [project.urls]
- "Homepage" = "https://github.com/fabariagbora/python_tutorial"
- "Bug Tracker" = "https://github.com/fabariagbora/python_tutorial/python_package_tutorial"
+ "Homepage" = "https://github.com/fabariagbora/python_tutorial/tree/main/python_package_tutorial"
+ "Bug Tracker" = "https://github.com/fabariagbora/python_tutorial/issues"
