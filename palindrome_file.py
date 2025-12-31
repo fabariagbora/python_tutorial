@@ -1,7 +1,19 @@
 from palindrome_fabari.phrase import Phrase
 
-with open("phrases.txt") as file:
-    text = file.read()
-    for line in text.splitlines():  # Arguably not Pythonic
-        if Phrase(line).ispalindrome():
-            print(f"palindrome detected: {line}")
+def main():
+    detect_palindromes()
+
+def detect_palindromes():
+
+    with open("phrases.txt") as file:
+        palindromes = [line for line in file.readlines()
+                    if Phrase(line).ispalindrome()]
+
+    palindrome_content = "".join(palindromes)
+    print(palindrome_content, end="")
+
+    with open("palindromes.txt", "w") as file:
+        file.write(palindrome_content)
+
+if __name__ == "__main__":
+    main()
