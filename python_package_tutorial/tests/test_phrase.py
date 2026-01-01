@@ -15,10 +15,16 @@ def test_palindrome_with_punctuation():
     assert Phrase("Madam, I'm Adam.").ispalindrome()
 
 def test_letters():
-    assert Phrase("Madam, I'm Adam.").letters() == "MadamImAdam"
+    assert Phrase("Madam, I'm Adam.").letters_and_digits() == "MadamImAdam"
 
 def test_integer_non_palindrome():
     assert not Phrase(12345).ispalindrome()
 
 def test_integer_palindrome():
     assert Phrase(12321).ispalindrome()
+
+def test_empty_string_not_palindrome():
+    assert not Phrase("").ispalindrome()
+
+def test_whitespace_string_not_palindrome():
+    assert not Phrase("     ").ispalindrome()
