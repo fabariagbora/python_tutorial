@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, app, render_template
+from flask import Flask, app, render_template, request
 from palindrome_fabari.phrase import Phrase
 
 def full_title(page_title):
@@ -39,7 +39,12 @@ def create_app(test_config=None):
     def palindrome():
         return render_template("palindrome.html", page_title="Palindrome Detector")
     
+    @app.route("/check", methods=("POST",))
+    def check():
+        phrase = request.form["phrase"]
+        is_palindrome = Phrase(phrase).ispalindrome()
+        return render_template("result.html", phrase=phrase, is_palindrome=is_palindrome)
+    
 
-        
     return app
 app = create_app()
