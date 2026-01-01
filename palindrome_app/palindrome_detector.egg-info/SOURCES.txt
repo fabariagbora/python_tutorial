@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+palindrome_detector/__init__.py
+palindrome_detector.egg-info/PKG-INFO
+palindrome_detector.egg-info/SOURCES.txt
+palindrome_detector.egg-info/dependency_links.txt
+palindrome_detector.egg-info/not-zip-safe
+palindrome_detector.egg-info/requires.txt
+palindrome_detector.egg-info/top_level.txt
+palindrome_detector/static/images/logo_b.png
+palindrome_detector/static/images/sator_square.jpg
+palindrome_detector/static/stylesheets/main.css
+palindrome_detector/templates/about.html
+palindrome_detector/templates/index.html
+palindrome_detector/templates/palindrome.html
+tests/test_site_pages.py
